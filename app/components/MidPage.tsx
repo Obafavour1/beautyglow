@@ -8,8 +8,8 @@ import certified from "../assests/certified.svg"
 
 export const MidPage = () => {
   return (
-    <section className='py-3 md:h-[300px] maxContainer px-32'>
-      <h2 className='font-jos w-[50vw] md:text-[28px] '>What we offer</h2>
+    <section className='py-6 md:h-[300px] maxContainer px-32'>
+      <h2 className='font-jos w-[50vw] mx-auto mb-3 text-[16px] md:text-[28px] '>What we offer</h2>
       <div className='grid md:grid-cols-4 gap-3 text-[12px] place-content-center md:h-[300px] '>
         
         <div className='card'>

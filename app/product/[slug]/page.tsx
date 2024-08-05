@@ -7,6 +7,7 @@ import { client } from "@/app/lib/sanity";
 import { Button } from "@/components/ui/button";
 import { Star, Truck } from "lucide-react";
 import { useShoppingCart } from '@/app/context/ShoppingCartContext';
+import { formatCurrency } from '@/app/utilities/formatCurrency';
 
 
 
@@ -66,10 +67,10 @@ export const dynamic = "force-dynamic";
             <div className="mb-4">
               <div className="flex items-end gap-2">
                 <span className="text-xl font-bold text-gray-800 md:text-2xl">
-                  ${data.price}
+                  {formatCurrency (data.price)}
                 </span>
                 <span className="mb-0.5 text-red-500 line-through">
-                  ${data.price + 30}
+                  {formatCurrency (data.price + 30)}
                 </span>
               </div>
 

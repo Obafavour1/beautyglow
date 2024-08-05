@@ -53,21 +53,26 @@ export default async function Newest() {
                 />
               </div>
 
-              <div className=" flex mt-4 justify-between">
-                <div>
+              <div className="mt-4 ">
+                <div className="flex justify-between">
                   <h3 className="text-sm text-gray-700">
                     <Link href={`/product/${product.slug}`}>
                       {product.name}
-                      
                     </Link>
                   </h3>
+                  <p className="text-sm font-medium text-gray-900">
+                    {formatCurrency (product.price)}
+                  </p>
+                 
+                </div>
+                <div  className="flex justify-between mt-4">
                   <p className="mt-1 text-sm text-gray-500">
                     {product.categoryName}
                   </p>
+                  <Link href={`/product/${product.slug}`} className="bg-purple-900 py-2 px-4 rounded-lg text-[white] text-[14px]">View</Link>
+
                 </div>
-                <p className="text-sm font-medium text-gray-900">
-                  {formatCurrency (product.price)}
-                </p>
+                
               </div>
             </div>
           ))}

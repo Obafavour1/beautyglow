@@ -101,7 +101,7 @@ export default function Navbar() {
                     ) : (
                       <Link
                         href={link.href}
-                        className="text-[16px] font-semibold text-gray-600 transition duration-100 hover:text-[#B444FF]"
+                        className="text-[16px] font-semibold text-gray-400 transition duration-100 hover:text-[#B444FF]"
                       >
                         {link.name}
                       </Link>
